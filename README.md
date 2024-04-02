@@ -1,8 +1,46 @@
 # Project2-Modeling
 
-## Results
+## Data Cleaning / Transformation
 
-Note: VIF Threshold = 10
+The data provided by the CDC was well prepared, such that we did not have to do
+any additional transformations. Some fields came pre-transformed, as documented
+here:
+
+| Field     | Raw Values                       | Transformed Values |
+| --------- | -------------------------------- | ------------------ |
+| Age       | 18 - 24                          | 1                  |
+| Age       | 25 - 29                          | 2                  |
+| Age       | 30 - 34                          | 3                  |
+| Age       | 35 - 39                          | 4                  |
+| Age       | 40 - 44                          | 5                  |
+| Age       | 45 - 49                          | 6                  |
+| Age       | 50 - 54                          | 7                  |
+| Age       | 55 - 59                          | 8                  |
+| Age       | 60 - 64                          | 9                  |
+| Age       | 65 - 69                          | 10                 |
+| Age       | 70 - 74                          | 11                 |
+| Age       | 75 - 79                          | 12                 |
+| Age       | 80+                              | 13                 |
+| Education | None / Kindergarten              | 1                  |
+| Education | Grades 1 - 8                     | 2                  |
+| Education | Grades 9 - 11                    | 3                  |
+| Education | Grade 12 or GED                  | 4                  |
+| Education | Some college or technical school | 5                  |
+| Education | College graduate                 | 6                  |
+| Income    | Less than $10,000                | 1                  |
+| Income    | $10,000 to less than $15,000     | 2                  |
+| Income    | $15,000 to less than $20,000     | 3                  |
+| Income    | $20,000 to less than $25,000     | 4                  |
+| Income    | $25,000 to less than $35,000     | 5                  |
+| Income    | $35,000 to less than $50,000     | 6                  |
+| Income    | $50,000 to less than $75,000     | 6                  |
+| Income    | $75,000 or more                  | 8                  |
+
+In most tuned models we utilized VIF to drop features, and some form of under-
+or over-sampling. Our threshold used for dropping features based on VIF was a
+score of 10.
+
+## Results
 
 Scores
 | Model               | Tuning                         | Balanced Accuracy | Precision | Recall | F1 (Accuracy / Weighted Avg) |
