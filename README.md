@@ -61,6 +61,7 @@ Scores
 | Random Forest       | VIF                            |                   | 0.39      | 0.17   | 0.85 / 0.82                  |
 | Random Forest       | VIF, Undersampled              |                   | 0.27      | 0.75   | 0.68 / 0.73                  |
 | Random Forest       | VIF, Oversampled               |                   | 0.30      | 0.36   | 0.80 / 0.80                  |
+| XGBoost             | Baseline                       |                   | 0.55      | 0.17   | 0.87 / 0.83                  |
 | XGBoost             | VIF                            |                   | 0.52      | 0.12   | 0.86 / 0.82                  |
 | XGBoost             | VIF, Oversampled               |                   | 0.29      | 0.78   | 0.71 / 0.75                  |
 | XGBoost             | VIF, Undersampled              |                   | 0.29      | 0.79   | 0.70 / 0.74                  |
