@@ -1,9 +1,19 @@
 # Project2-Modeling
 
+## Overview
+
+The purpose of this project was to create a model to predict and better
+understand the relationship between lifestyle and diabetes.
+
+Our top metric priority was recall, to flag as many individuals that are at-risk
+for diabetes as we can. After that we prioritized precision, to minimize the
+number of healthy individuals falsely flagged as at-risk, in order to reduce
+the spend on unnecessary medical checkups/diagnostics. 
+
 ## Data Cleaning / Transformation
 
 The data provided by the CDC was well prepared, such that we did not have to do
-any additional transformations. Some fields came pre-transformed, as documented
+any additional transformations. Some fields came pre-bucketed, as documented
 here:
 
 | Field     | Raw Values                       | Transformed Values |
